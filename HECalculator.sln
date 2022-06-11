@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HECalculator", "HECalculator\HECalculator.csproj", "{1333E586-1AAE-441C-8DE3-5612F2E3F802}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1333E586-1AAE-441C-8DE3-5612F2E3F802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1333E586-1AAE-441C-8DE3-5612F2E3F802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1333E586-1AAE-441C-8DE3-5612F2E3F802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1333E586-1AAE-441C-8DE3-5612F2E3F802}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8012E3D8-9D56-414F-AD0D-4812533331B4}
+	EndGlobalSection
+EndGlobal
