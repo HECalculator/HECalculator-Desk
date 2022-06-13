@@ -5,4 +5,6 @@ public class Worker
 	public Worker()
 	{
 	}
+
+	private Inputs inputs;
 }
