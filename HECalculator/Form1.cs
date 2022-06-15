@@ -25,15 +25,4 @@ namespace HECalculator
             textBox2.Text = dummy.MatDesc;
         }
     }
-
-    // Custom class that store string and return it with prefix
-    class Dummy
-    {
-        private string _Value;
-        public string Value
-        {
-            get { return "Value: " + _Value; }
-            set { _Value = value; }
-        }
-    }
 }
