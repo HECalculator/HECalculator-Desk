@@ -56,6 +56,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Backend\Worker.cs" />
     <Compile Include="Backend\Inputs.cs" />
+    <Compile Include="Backend\Validations.cs" />
+    <Compile Include="Backend\States.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
