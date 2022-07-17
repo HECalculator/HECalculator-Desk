@@ -11,6 +11,7 @@ namespace HECalculator
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static Worker worker = new Worker();
         [STAThread]
         static void Main()
         {

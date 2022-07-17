@@ -4,6 +4,9 @@ public class Worker
 {
 	public Worker()
 	{
+		this.Inputs=new Inputs();
+		this.Validations=new Validations(States);
+		this.States=new States();
 	}
 	private Inputs _inputs;
 	private Validations _validations;
