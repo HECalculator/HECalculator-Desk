@@ -8,10 +8,10 @@ namespace HECalculator
 {
     internal static class Program
     {
+        public static Worker worker = new Worker();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        public static Worker worker = new Worker();
         [STAThread]
         static void Main()
         {
