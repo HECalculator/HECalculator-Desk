@@ -2,9 +2,12 @@
 
 public class Validations
 {
-    public Validations()
+    public Validations(States states)
     {
+        this.States = states;
     }
+
+    public States States { get => States; set => States = value; }
 
     double? inputValidationEmptyW(string value)
     {
@@ -12,12 +15,12 @@ public class Validations
         {
             if (value == null || isLessThenZero(parsedValue) == true)
             {
-                // Add state error in future
+                States.Message.Add("Input empty or less than zero.");
                 return null;
             }
             return parsedValue;
         }
-        // Add state error in future
+        States.Message.Add("Input has to be a numeric type.");
         return null;
     }
 
@@ -27,17 +30,17 @@ public class Validations
         {
             if (value == null)
             {
-                // Add state error for empty field in future
+                States.Message.Add("Input empty.");
                 return null;
             }
             if (isLessThenZero(parsedValue) == true)
             {
-                // Add state error in future
+                States.Message.Add("Input less than zero.");
                 return null;
             }
             return parsedValue;
         }
-        // Add state error in future
+        States.Message.Add("Input has to be a numeric type.");
         return null;
     }
 
@@ -47,12 +50,12 @@ public class Validations
         {
             if (value == null || isLessThenZero(parsedValue) == true)
             {
-                // Add state error in future
+                States.Message.Add("Input empty or less than zero.");
                 return null;
             }
             return parsedValue;
         }
-        // Add state error in future
+        States.Message.Add("Input has to be a numeric type.");
         return null;
     }
 
@@ -68,19 +71,19 @@ public class Validations
 
         if (validateHoleFromBottom(inputs.LlHoleDia, inputs.LlODOffToHole))
         {
-            // Add state error in future - Lifting lug height not sufficient due to hole diameter
+            States.Message.Add("Lifting lug height not sufficient due to hole diameter.");
         };
         if (validateHoleFromSides(inputs.LlHoleDia, inputs.LlWidth))
         {
-            // Add state error in future - Lifting lug width not sufficient due to hole diameter
+            States.Message.Add("Lifting lug width not sufficient due to hole diameter.");
         };
         if (validateArcRadius(inputs.LlHoleDia, inputs.LlSCArcRad))
         {
-            // Add state error in future - Lifting lug semi-circular arc not sufficient due to hole diameter
+            States.Message.Add("Lifting lug semi-circular arc not sufficient due to hole diameter.");
         };
         if (validateImpactFac(inputs.ImpactFac))
         {
-            // Add state error in future - Impact factor is less than 1.
+            States.Message.Add("Impact factor is less than 1.");
         };
 
     }
